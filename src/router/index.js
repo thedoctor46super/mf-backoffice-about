@@ -1,14 +1,14 @@
-import { createRouter, createWebHistory } from 'vue-router';
+//import { createRouter, createWebHistory } from 'vue-router';
 import About from '/src/components/About.vue';
 const routes = [
   {
-    path: '/about',
+    path: '/mf-backoffice-root/about',
     name: 'About',
     component: About,
   },
 ];
-const router = createRouter({
-  history: createWebHistory(),
+const router = VueRouter.createRouter({
+  history: VueRouter.createWebHistory(),
   routes,
 });
 export default router;
